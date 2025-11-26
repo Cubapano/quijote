@@ -25,7 +25,7 @@
   <data name="es_pano31_title"><![CDATA[IMG_20250212_125128_00_merged copia]]></data>
 
 
-	<data name="es_spotmap73_tooltip"><![CDATA[]]></data>
+	<data name="es_spotmap70_tooltip"><![CDATA[]]></data>
 
 
 
@@ -43,7 +43,7 @@
   <data name="es_button10tooltip"><![CDATA[Schedules]]></data>
   <data name="es_button11tooltip"><![CDATA[Horarios]]></data>
   <data name="es_button12tooltip"><![CDATA[Ir Plano]]></data>
-  <data name="es_button12onclick104620openurlwebsiteurl"><![CDATA[https://cubapano.github.io/especiales/]]></data>
+  <data name="es_button12onclick104620openurlwebsiteurl"><![CDATA[https://cubapano.github.io/mapa/]]></data>
 
 
   <data name="es_vr_setup_hmd0"><![CDATA[SELECCIONE SU HMD]]></data>
