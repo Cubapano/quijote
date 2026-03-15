@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.19-pr16">
+
+    
+  <!-- Spot Style - Default Point Spot Style -->
+
+
+  <style name="IconDefaultPointSpotStyle"
+         url="%FIRSTXML%/spots/hotspot_image_sequence_user_defaultpoint0.png"
+         visible="false"
+         frame="0"
+         lastframe="12"
+         framewidth="50"
+         frameheight="50"
+         stopspotsequence="false"
+         crop="0|0|50|50"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconDefaultPointSpotStyle"
+         onout="onoutIconDefaultPointSpotStyle"
+
+
+         />
+  <action name="onhoverIconDefaultPointSpotStyle">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDefaultPointSpotStyle">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  <!-- unsupported kind of display : PointMap -->
+
+
+<!-- ********** -->
+<!-- ButtonRU -->
+<!-- id : button3 -->
+<!-- ********** -->
+
+  <layer name="button3"
+         keep="true"
+         url="%FIRSTXML%/graphics/button3/ru.png"
+         align="top"
+         x="90"
+         y="10"
+         zorder="1"
+         visible="false"
+         onclick="button3OnClick"
+         tooltip="button3tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="30"
+         width="30"
+         />
+
+
+
+  <action name="button3OnClick">showbutton7();
+showbutton8();
+hidebutton4();
+hidebutton5();
+hidebutton6();
+hidebutton11();
+hidebutton10();
+hidebutton9();
+
+
+  </action>
+
+  <events name="button3events"
+    onTourStart="showbutton3();"
+    hidetourcontrols="hidebutton3();"
+    showtourcontrols="showbutton3();"
+    keep="true" />
+  <action name="hidebutton3">set(layer[button3].visible, false);</action>
+  <action name="showbutton3">if(tour_displaycontrols,set(layer[button3].visible, true);,hidebutton3(););</action>
+
+
+<!-- ********** -->
+<!-- ButtonFR -->
+<!-- id : button2 -->
+<!-- ********** -->
+
+  <layer name="button2"
+         keep="true"
+         url="%FIRSTXML%/graphics/button2/fr.png"
+         align="top"
+         x="30"
+         y="10"
+         zorder="2"
+         visible="false"
+         onclick="button2OnClick"
+         tooltip="button2tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="30"
+         width="30"
+         />
+
+
+
+  <action name="button2OnClick">showbutton6();
+showbutton9();
+hidebutton4();
+hidebutton5();
+hidebutton7();
+hidebutton11();
+hidebutton10();
+hidebutton8();
+
+
+  </action>
+
+  <events name="button2events"
+    onTourStart="showbutton2();"
+    hidetourcontrols="hidebutton2();"
+    showtourcontrols="showbutton2();"
+    keep="true" />
+  <action name="hidebutton2">set(layer[button2].visible, false);</action>
+  <action name="showbutton2">if(tour_displaycontrols,set(layer[button2].visible, true);,hidebutton2(););</action>
+
+
+<!-- ********** -->
+<!-- ButtonEN -->
+<!-- id : button1 -->
+<!-- ********** -->
+
+  <layer name="button1"
+         keep="true"
+         url="%FIRSTXML%/graphics/button1/us.png"
+         align="top"
+         x="-30"
+         y="10"
+         zorder="3"
+         visible="false"
+         onclick="button1OnClick"
+         tooltip="button1tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="30"
+         width="30"
+         />
+
+
+
+  <action name="button1OnClick">showbutton5();
+showbutton10();
+hidebutton4();
+hidebutton6();
+hidebutton7();
+hidebutton11();
+hidebutton9();
+hidebutton8();
+
+
+  </action>
+
+  <events name="button1events"
+    onTourStart="showbutton1();"
+    hidetourcontrols="hidebutton1();"
+    showtourcontrols="showbutton1();"
+    keep="true" />
+  <action name="hidebutton1">set(layer[button1].visible, false);</action>
+  <action name="showbutton1">if(tour_displaycontrols,set(layer[button1].visible, true);,hidebutton1(););</action>
+
+
+<!-- ********** -->
+<!-- ButtonES -->
+<!-- id : button -->
+<!-- ********** -->
+
+  <layer name="button"
+         keep="true"
+         url="%FIRSTXML%/graphics/button/es.png"
+         align="top"
+         x="-90"
+         y="10"
+         zorder="4"
+         visible="false"
+         onclick="buttonOnClick"
+         tooltip="buttontooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="30"
+         width="30"
+         />
+
+
+
+  <action name="buttonOnClick">showbutton4();
+showbutton11();
+hidebutton5();
+hidebutton6();
+hidebutton7();
+hidebutton10();
+hidebutton9();
+hidebutton8();
+
+
+  </action>
+
+  <events name="buttonevents"
+    onTourStart="showbutton();"
+    hidetourcontrols="hidebutton();"
+    showtourcontrols="showbutton();"
+    keep="true" />
+  <action name="hidebutton">set(layer[button].visible, false);</action>
+  <action name="showbutton">if(tour_displaycontrols,set(layer[button].visible, true);,hidebutton(););</action>
+
+
+<!-- ********** -->
+<!-- MenuRU -->
+<!-- id : button7 -->
+<!-- ********** -->
+
+  <layer name="button7"
+         keep="true"
+         url="%FIRSTXML%/graphics/button7/fork-and-knife-final.png"
+         align="bottom"
+         x="0"
+         y="10"
+         zorder="5"
+         visible="false"
+         onclick="button7OnClick"
+         tooltip="button7tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button7OnClick">
+displayImage(%FIRSTXML%/graphics/button7/menu-ru.jpg
+             ,center,0,0
+             ,'',''
+             ,false
+             ,false
+             ,true
+             ,false
+             ,000000
+             ,0.80000000000000004);
+
+  </action>
+
+  <events name="button7events"
+    onTourStart="showbutton7();"
+    hidetourcontrols="hidebutton7();"
+    showtourcontrols="showbutton7();"
+    keep="true" />
+  <action name="hidebutton7">set(layer[button7].visible, false);</action>
+  <action name="showbutton7">if(tour_displaycontrols,set(layer[button7].visible, true);,hidebutton7(););</action>
+
+
+<!-- ********** -->
+<!-- MenuFR -->
+<!-- id : button6 -->
+<!-- ********** -->
+
+  <layer name="button6"
+         keep="true"
+         url="%FIRSTXML%/graphics/button6/fork-and-knife-final.png"
+         align="bottom"
+         x="0"
+         y="10"
+         zorder="6"
+         visible="false"
+         onclick="button6OnClick"
+         tooltip="button6tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button6OnClick">
+displayImage(%FIRSTXML%/graphics/button6/menu-fr.jpg
+             ,center,0,0
+             ,'',''
+             ,false
+             ,false
+             ,true
+             ,false
+             ,000000
+             ,0.80000000000000004);
+
+  </action>
+
+  <events name="button6events"
+    onTourStart="showbutton6();"
+    hidetourcontrols="hidebutton6();"
+    showtourcontrols="showbutton6();"
+    keep="true" />
+  <action name="hidebutton6">set(layer[button6].visible, false);</action>
+  <action name="showbutton6">if(tour_displaycontrols,set(layer[button6].visible, true);,hidebutton6(););</action>
+
+
+<!-- ********** -->
+<!-- MenuEN -->
+<!-- id : button5 -->
+<!-- ********** -->
+
+  <layer name="button5"
+         keep="true"
+         url="%FIRSTXML%/graphics/button5/fork-and-knife-final.png"
+         align="bottom"
+         x="0"
+         y="10"
+         zorder="7"
+         visible="false"
+         onclick="button5OnClick"
+         tooltip="button5tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button5OnClick">
+displayImage(%FIRSTXML%/graphics/button5/menu-en.jpg
+             ,center,0,0
+             ,'',''
+             ,false
+             ,false
+             ,true
+             ,false
+             ,000000
+             ,0.80000000000000004);
+
+  </action>
+
+  <events name="button5events"
+    onTourStart="showbutton5();"
+    hidetourcontrols="hidebutton5();"
+    showtourcontrols="showbutton5();"
+    keep="true" />
+  <action name="hidebutton5">set(layer[button5].visible, false);</action>
+  <action name="showbutton5">if(tour_displaycontrols,set(layer[button5].visible, true);,hidebutton5(););</action>
+
+
+<!-- ********** -->
+<!-- MenuES -->
+<!-- id : button4 -->
+<!-- ********** -->
+
+  <layer name="button4"
+         keep="true"
+         url="%FIRSTXML%/graphics/button4/fork-and-knife-final.png"
+         align="bottom"
+         x="0"
+         y="10"
+         zorder="8"
+         visible="false"
+         onclick="button4OnClick"
+         tooltip="button4tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button4OnClick">
+displayImage(%FIRSTXML%/graphics/button4/menu-es.jpg
+             ,center,0,0
+             ,'',''
+             ,false
+             ,false
+             ,true
+             ,false
+             ,000000
+             ,0.80000000000000004);
+
+  </action>
+
+  <events name="button4events"
+    onTourStart="showbutton4();"
+    hidetourcontrols="hidebutton4();"
+    showtourcontrols="showbutton4();"
+    keep="true" />
+  <action name="hidebutton4">set(layer[button4].visible, false);</action>
+  <action name="showbutton4">if(tour_displaycontrols,set(layer[button4].visible, true);,hidebutton4(););</action>
+
+
+<!-- ********** -->
+<!-- TimeRU -->
+<!-- id : button8 -->
+<!-- ********** -->
+
+  <layer name="button8"
+         keep="true"
+         url="%FIRSTXML%/graphics/button8/time_final.png"
+         align="bottom"
+         x="-90"
+         y="10"
+         zorder="9"
+         visible="false"
+         onclick="button8OnClick"
+         tooltip="button8tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button8OnClick">
+displayImage(%FIRSTXML%/graphics/button8/horario-ru.jpg
+             ,center,0,0
+             ,'',''
+             ,false
+             ,false
+             ,true
+             ,false
+             ,000000
+             ,0.80000000000000004);
+
+  </action>
+
+  <events name="button8events"
+    onTourStart="showbutton8();"
+    hidetourcontrols="hidebutton8();"
+    showtourcontrols="showbutton8();"
+    keep="true" />
+  <action name="hidebutton8">set(layer[button8].visible, false);</action>
+  <action name="showbutton8">if(tour_displaycontrols,set(layer[button8].visible, true);,hidebutton8(););</action>
+
+
+<!-- ********** -->
+<!-- TimeFR -->
+<!-- id : button9 -->
+<!-- ********** -->
+
+  <layer name="button9"
+         keep="true"
+         url="%FIRSTXML%/graphics/button9/time_final.png"
+         align="bottom"
+         x="-90"
+         y="10"
+         zorder="10"
+         visible="false"
+         onclick="button9OnClick"
+         tooltip="button9tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button9OnClick">
+displayImage(%FIRSTXML%/graphics/button9/horario-fr.jpg
+             ,center,0,0
+             ,'',''
+             ,false
+             ,false
+             ,true
+             ,false
+             ,000000
+             ,0.80000000000000004);
+
+  </action>
+
+  <events name="button9events"
+    onTourStart="showbutton9();"
+    hidetourcontrols="hidebutton9();"
+    showtourcontrols="showbutton9();"
+    keep="true" />
+  <action name="hidebutton9">set(layer[button9].visible, false);</action>
+  <action name="showbutton9">if(tour_displaycontrols,set(layer[button9].visible, true);,hidebutton9(););</action>
+
+
+<!-- ********** -->
+<!-- TimeEN -->
+<!-- id : button10 -->
+<!-- ********** -->
+
+  <layer name="button10"
+         keep="true"
+         url="%FIRSTXML%/graphics/button10/time_final.png"
+         align="bottom"
+         x="-90"
+         y="10"
+         zorder="11"
+         visible="false"
+         onclick="button10OnClick"
+         tooltip="button10tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button10OnClick">
+displayImage(%FIRSTXML%/graphics/button10/horario-en.jpg
+             ,center,0,0
+             ,'',''
+             ,false
+             ,false
+             ,true
+             ,false
+             ,000000
+             ,0.80000000000000004);
+
+  </action>
+
+  <events name="button10events"
+    onTourStart="showbutton10();"
+    hidetourcontrols="hidebutton10();"
+    showtourcontrols="showbutton10();"
+    keep="true" />
+  <action name="hidebutton10">set(layer[button10].visible, false);</action>
+  <action name="showbutton10">if(tour_displaycontrols,set(layer[button10].visible, true);,hidebutton10(););</action>
+
+
+<!-- ********** -->
+<!-- TimeES -->
+<!-- id : button11 -->
+<!-- ********** -->
+
+  <layer name="button11"
+         keep="true"
+         url="%FIRSTXML%/graphics/button11/time_final.png"
+         align="bottom"
+         x="-90"
+         y="10"
+         zorder="12"
+         visible="false"
+         onclick="button11OnClick"
+         tooltip="button11tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button11OnClick">
+displayImage(%FIRSTXML%/graphics/button11/horario-es.jpg
+             ,center,0,0
+             ,'',''
+             ,false
+             ,false
+             ,true
+             ,false
+             ,000000
+             ,0.80000000000000004);
+
+  </action>
+
+  <events name="button11events"
+    onTourStart="showbutton11();"
+    hidetourcontrols="hidebutton11();"
+    showtourcontrols="showbutton11();"
+    keep="true" />
+  <action name="hidebutton11">set(layer[button11].visible, false);</action>
+  <action name="showbutton11">if(tour_displaycontrols,set(layer[button11].visible, true);,hidebutton11(););</action>
+
+
+<!-- ********** -->
+<!-- ExtLinkES -->
+<!-- id : button12 -->
+<!-- ********** -->
+
+  <layer name="button12"
+         keep="true"
+         url="%FIRSTXML%/graphics/button12/external-link-final.png"
+         align="bottom"
+         x="90"
+         y="10"
+         zorder="13"
+         visible="false"
+         onclick="button12OnClick"
+         tooltip="button12tooltip"
+         onhover="showTooltip('plugin');"
+         onout="hideTooltip();"
+         height="40"
+         width="40"
+         />
+
+
+
+  <action name="button12OnClick">getmessage(urltoopen,button12onclick104620openurlwebsiteurl);openurl(get(urltoopen),_self);
+
+
+  </action>
+
+  <events name="button12events"
+    onTourStart="showbutton12();"
+    hidetourcontrols="hidebutton12();"
+    showtourcontrols="showbutton12();"
+    keep="true" />
+  <action name="hidebutton12">set(layer[button12].visible, false);</action>
+  <action name="showbutton12">if(tour_displaycontrols,set(layer[button12].visible, true);,hidebutton12(););</action>
+
+
+  <action name="displayImage">
+    if (layer[displayedStandardImage],
+      if(layer[displayedStandardImage].doNotDeleteMe,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, false);
+        
+        if (%1 == layer[displayedStandardImage].url,
+          applyDisplayedImageObjectAnimation(%8);
+        ,
+          setDisplayedImageObjectParameters(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10);
+        );
+      ,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, true);
+        events.dispatch(onremovedisplayedobject);
+        delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      );
+    ,
+      if(%10,
+        addlayer(displayedStandardImageOverlay);
+        set(layer[displayedStandardImageOverlay].keep, false);
+        set(layer[displayedStandardImageOverlay].width, 100%);
+        set(layer[displayedStandardImageOverlay].height, 100%);
+        set(layer[displayedStandardImageOverlay].type, container);
+        set(layer[displayedStandardImageOverlay].zorder, 98);
+        set(layer[displayedStandardImageOverlay].visible, false);
+        set(layer[displayedStandardImageOverlay].onclick, applyDisplayedImageObjectAnimation(%8););
+        set(layer[displayedStandardImageOverlay].bgcolor, "0x%11");
+        set(layer[displayedStandardImageOverlay].bgalpha, %12);
+        set(layer[displayedStandardImageOverlay].bgcapture, true);
+      );
+      addlayer(displayedStandardImage);
+      set(layer[displayedStandardImage].keep, false);
+      set(layer[displayedStandardImage].onclick, applyDisplayedImageObjectAnimation(%8););
+      set(layer[displayedStandardImage].zorder , 99);
+      set(layer[displayedStandardImage].currentCall, true);
+      set(layer[displayedStandardImage].doNotDeleteMe, true);
+      set(layer[displayedStandardImage].onloaded, resizeDisplayedImageObject());
+      events.dispatch(onremovedisplayedobject);
+      delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      set(layer[displayedStandardImage].visible, false);
+    );
+  </action>
+  <action name="applyDisplayedImageObjectAnimation">resumeautorotation(forcehotspot);
+
+    if (%1,
+      stoptween(layer[displayedStandardImage].width, layer[displayedStandardImage].height);
+      tween(layer[displayedStandardImage].width|layer[displayedStandardImage].height, 1|1, 1, easeOutQuad, WAIT);
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    ,
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    );
+  </action>
+  <action name="setDisplayedImageObjectParameters">
+    set(layer[displayedStandardImage].url       , %1);
+    set(layer[displayedStandardImage].align     , %2);
+    set(layer[displayedStandardImage].x         , %3);
+    set(layer[displayedStandardImage].y         , %4);
+    set(layer[displayedStandardImage].imgwidth  , %5);
+    set(layer[displayedStandardImage].imgheight , %6);
+    set(layer[displayedStandardImage].animated  , %8);
+    set(layer[displayedStandardImage].applyratio, %9);
+    set(layer[displayedStandardImage].overlay   , %10);
+    if (%7,pauseautorotation(forcehotspot);
+);
+  </action>
+  <action name="resizeDisplayedImageObject">
+    if(layer[displayedStandardImage].url,
+    set(layer[displayedStandardImage].fullwidth, get(layer[displayedStandardImage].width));
+    set(layer[displayedStandardImage].fullheight, get(layer[displayedStandardImage].height));
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].width , 1);
+      set(layer[displayedStandardImage].height, 1);
+    );
+    if(layer[displayedStandardImage].imgwidth != "" AND layer[displayedStandardImage].imgheight != "",
+      if(layer[displayedStandardImage].imgwidth == "prop",
+        set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+        indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+        if(tempDisplayedImageObjectHeightPercent GT 0,
+          txtreplace(tempDisplayedImageObjectHeight, '%', '');
+          mul(tempDisplayedImageObjectHeight, get(stageheight));
+          div(tempDisplayedImageObjectHeight, 100);
+          Math.round(tempDisplayedImageObjectHeight);
+        );
+        mul(flyingImgWidth,get(layer[displayedStandardImage].fullwidth),get(tempDisplayedImageObjectHeight));
+        div(flyingImgWidth,get(layer[displayedStandardImage].fullheight));
+        Math.round(flyingImgWidth);
+        set(layer[displayedStandardImage].imgwidth , get(flyingImgWidth));
+        set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+      ,
+        if(layer[displayedStandardImage].imgheight == "prop",
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          mul(flyingImgHeight,get(layer[displayedStandardImage].fullheight),get(tempDisplayedImageObjectWidth));
+          div(flyingImgHeight,get(layer[displayedStandardImage].fullwidth));
+          Math.round(flyingImgHeight);
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight , get(flyingImgHeight));
+        ,
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          if(tempDisplayedImageObjectHeightPercent GT 0,
+            txtreplace(tempDisplayedImageObjectHeight, '%', '');
+            mul(tempDisplayedImageObjectHeight, get(stageheight));
+            div(tempDisplayedImageObjectHeight, 100);
+            Math.round(tempDisplayedImageObjectHeight);
+          );
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+        );
+      );
+    ,
+      set(layer[displayedStandardImage].imgwidth , get(layer[displayedStandardImage].fullwidth));
+      set(layer[displayedStandardImage].imgheight, get(layer[displayedStandardImage].fullheight));
+    );
+    
+    set(resizedwidth, get(layer[displayedStandardImage].imgwidth));
+    set(resizedheight, get(layer[displayedStandardImage].imgheight));
+    if(layer[displayedStandardImage].applyratio,
+      sub(resizedstagewidth, get(stagewidth), get(layer[displayedStandardImage].x));
+      sub(resizedstageheight, get(stageheight), get(layer[displayedStandardImage].y));
+      Math.abs(resizedstagewidth);
+      Math.abs(resizedstageheight);
+      if(resizedwidth GT resizedstagewidth,
+        mul(tempresizedheight, get(resizedheight), get(resizedstagewidth));
+        div(tempresizedheight, get(resizedwidth));
+        Math.round(tempresizedheight);
+        set(resizedwidth, get(resizedstagewidth));
+        set(resizedheight, get(tempresizedheight));
+      );
+      if(resizedheight GT resizedstageheight,
+        mul(tempresizedwidth, get(resizedwidth), get(resizedstageheight));
+        div(tempresizedwidth, get(resizedheight));
+        Math.round(tempresizedwidth);
+        set(resizedheight, get(resizedstageheight));
+        set(resizedwidth, get(tempresizedwidth));
+      );
+    );
+    
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].animated, false);
+      tween(layer[displayedStandardImage].width , get(resizedwidth), 1, easeOutQuad);
+      tween(layer[displayedStandardImage].height, get(resizedheight), 1, easeOutQuad);
+    ,
+      set(layer[displayedStandardImage].width , get(resizedwidth));
+      set(layer[displayedStandardImage].height, get(resizedheight));
+    );
+    if(layer[displayedStandardImage].overlay,set(layer[displayedStandardImageOverlay].visible, true););
+    set(layer[displayedStandardImage].visible, true);
+    ,
+      delayedcall(0.2,resizeDisplayedImageObject(););
+    );
+  </action>
+  <events name="displayedImageObjectEvents" keep="true" onremovedisplayedobject="displayedImageObjectOnRemoveDisplayedObject" onresize="if(layer[displayedStandardImage],resizeDisplayedImageObject());" />
+  <action name="displayedImageObjectOnRemoveDisplayedObject">
+    ifnot(layer[displayedStandardImage].currentCall,if(layer[displayedStandardImage].visible,resumeautorotation(forcehotspot);
+
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););
+      removelayer(displayedStandardImage);
+    ););
+  </action>
+
+
+</krpano>
